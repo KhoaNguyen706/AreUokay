@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-AreUokay detects falls in real time from phone motion data. A Go core ingests Sensor Logger pushes, cuts them into windows, gets scores from a Python worker and logs `FALL`. The code is at Phase 1 ("thin slice") of `Fall Detection Platform Design Doc and Game Plan.md`, which is the source of truth for the roadmap, the goals and what is out of scope. `CODEBASE_EXPLAINED.md` is a file-by-file walkthrough; its `file:line` references go stale when code moves.
+AreUokay detects falls in real time from phone motion data. A Go core ingests Sensor Logger pushes, cuts them into windows, gets scores from a Python worker and logs `FALL`. The code is at Phase 1 ("thin slice") of `Fall Detection Platform Design Doc and Game Plan.md`, which is the source of truth for the roadmap, the goals and what is out of scope. `CODEBASE_EXPLAINED.md` is a file-by-file walkthrough; its `file:line` references go stale when code moves. Both docs are gitignored, so they exist only in the owner's local copy.
 
 Both halves use only the standard library: `go.mod` (Go 1.23, module `areuokay`) has no requirements, and the worker imports nothing outside Python's stdlib.
 
